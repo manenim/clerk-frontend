@@ -22,7 +22,7 @@ const setPassword = () => {
             </Box>
         </Box>
 
-        <Box sx={{ position: 'relative', bottom: { lg: '3.5em', xs: '4em' }, marginLeft: '4.5em', display: 'flex', gap: '1em' }}>
+        <Box sx={{ position: 'relative', bottom: { lg: '3.5em', xs: '3em' }, marginLeft: { lg: '4.5em' }, display: 'flex', gap: '1em' }}>
             <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                 <Box sx={{ width: '1em', height: '1em', backgroundColor: '#2F327D', textAlign: 'center', color: '#fff', borderRadius: '2px' }}>1</Box>
                 <Typography>School Profile</Typography>
@@ -54,9 +54,9 @@ const setPassword = () => {
 
             
             <FormControl sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
-                <TextField id="filled-basic" label="Password" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
+                <TextField id="filled-basic" label="Password" required sx={{ width: { lg: '20em', md: '30em', xs: '20em' } }} variant="filled" />
 
-                <TextField id="filled-basic" label="Confirm Password" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
+                <TextField id="filled-basic" label="Confirm Password" required sx={{ width: { lg: '20em', md: '30em', xs: '20em' } }} variant="filled" />
 
 
                 <Button href='/pricing' variant="contained" sx={{ width: { lg: '20em', md: '30em', xs: '24em' }, background: '#2F327D' }}>

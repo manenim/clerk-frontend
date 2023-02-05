@@ -12,7 +12,7 @@ export default function Slider() {
                 <Box key={item.id} sx={{ width: '100%' }}>
                     <Image src={item.iamge} width={700} height={700} alt="slider" />
 
-                    <Box sx={{ position: 'relative', bottom: '12em', left: '5em'  }}>
+                    <Box sx={{ position: 'relative', bottom: { lg: '12em',  xs: '15em' }, left: '1em'  }}>
                         <Typography color="#fff" fontWeight="700" variant="h3">{item.headText1}</Typography>
                         <Typography color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
                         <Typography color="#fff" variant="h5">{item.lightText}</Typography>

@@ -22,7 +22,7 @@ const PersonalInfo = () => {
             </Box>
         </Box>
 
-        <Box sx={{ position: 'relative', bottom: { lg: '1em', xs: '4em' }, right: '.6em', marginLeft: '3em', display: 'flex', gap: '1em' }}>
+        <Box sx={{ position: 'relative', bottom: { lg: '1em', xs: '4em' }, right: '.6em', marginLeft: '4.4em', display: 'flex', gap: '1em' }}>
             <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                 <Box sx={{ width: '1em', height: '1em', backgroundColor: '#2F327D', textAlign: 'center', color: '#fff', borderRadius: '2px' }}>1</Box>
                 <Typography>School Profile</Typography>
@@ -43,7 +43,7 @@ const PersonalInfo = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, ml: { xs: '2.4em' }, mb: { xs: '2em' } }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 

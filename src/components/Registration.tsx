@@ -5,8 +5,8 @@ import Link from 'next/link';
 import logo from "../../public/images/svgs/Logo.svg";
 import Image from 'next/image';
 
-const TeacherLogin = () => {
-  const [value, setValue] = useState("");
+const Registration = () => {
+  const [value, setValue] = useState("Reg status");
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     setValue(event.target.value as string);
@@ -49,7 +49,7 @@ const TeacherLogin = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto', ml: { xs: '1.2em' } }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 
@@ -58,22 +58,20 @@ const TeacherLogin = () => {
             </Box>
 
             
-            <FormControl variant="filled" sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
+            <FormControl variant="filled" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
                 
-                <TextField id="filled-basic" label="Enter School Name" sx={{ width: '20em' }} variant="filled" />
+                <TextField id="filled-basic" label="Enter School Name" sx={{ width: '20em' }} variant="filled" required />
 
-                <TextField id="filled-basic" label="Enter School Address" sx={{ width: '20em' }} variant="filled" />
+                <TextField id="filled-basic" label="Enter School Address" sx={{ width: '20em' }} variant="filled" required />
                 
-                
-                <Select labelId='select-label' value={value} onChange={handleChange} label="Registration Status" sx={{ width: '20em' }} >
-
+                <Select labelId='Registration Status' id="Registration Status" value={value} onChange={handleChange} label="Registration Status" sx={{ width: '20em' }} required >
                     <MenuItem><em>None</em></MenuItem>
                     <MenuItem value={1}>one</MenuItem>
                     <MenuItem value={2}>two</MenuItem>
                     <MenuItem value={3}>three</MenuItem>
                 </Select>
 
-                <TextField id="filled-basic" label="Education Level" sx={{ width: '20em' }} variant="filled" />
+                <TextField id="filled-basic" label="Education Level" sx={{ width: '20em' }} variant="filled" required />
 
                 <Button href='/personalInfo' variant="contained" sx={{ width: '20em', background: '#2F327D' }}>
                   Next
@@ -86,4 +84,4 @@ const TeacherLogin = () => {
   )
 }
 
-export default TeacherLogin
+export default Registration
