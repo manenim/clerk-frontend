@@ -58,7 +58,7 @@ const TeacherLogin = () => {
             </Box>
 
             
-            <FormControl variant="standard" sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
+            <FormControl variant="filled" sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
                 
                 <TextField id="filled-basic" label="Enter School Name" sx={{ width: '20em' }} variant="filled" />
 
