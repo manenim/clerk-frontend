@@ -31,10 +31,10 @@ a {
   box-shadow: none;
   border-radius: 8px;
 }
-.control__scroll {
+/* .control__scroll {
   overflow-y: scroll;
   overflow-x: hidden;
-}
+} */
 .control__scroll ::-webkit-scrollbar {
   width: 8px;
   height: 30px;
