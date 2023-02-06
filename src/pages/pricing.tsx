@@ -1,8 +1,11 @@
-import React from 'react'
+import { Pricing } from "@/components"
+import { Box } from "@mui/material"
 
 const pricing = () => {
   return (
-    <div>pricing</div>
+    <Box>
+        <Pricing />
+    </Box>
   )
 }
 

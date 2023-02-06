@@ -11,7 +11,7 @@ export default function Home() {
           <Slider />
         </Box>
        
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', bottom: '5em' }}>
           <WelcomeBack />
         </Box>
       </Box>

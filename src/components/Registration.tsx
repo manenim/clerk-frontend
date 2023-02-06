@@ -49,7 +49,7 @@ const Registration = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto', ml: { xs: '1.2em' } }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, ml: { xs: '1.2em' } }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 

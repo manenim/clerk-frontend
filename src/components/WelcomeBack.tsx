@@ -9,9 +9,9 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function WelcomeBack() {
     return (
-       <Box>
+       <Box >
 
-        <Box sx={{ position: 'relative', bottom: { lg: '10em', xs: '4em' }, left: { lg: '12em', xs: '2em' } }}>
+        <Box sx={{ position: 'relative', bottom: { lg: '7em', xs: '4em' }, left: { lg: '12em', xs: '2em' } }}>
             <Typography>Don't have an account? <Link style={{ color: 'blue' }} href="/registration">Create Account</Link></Typography>
         </Box>
 
@@ -24,7 +24,7 @@ export default function WelcomeBack() {
                 </Box>
 
                 <Link href="/registration">      
-                    <Box sx={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', height: '3em', display: 'flex', width: '17em', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
+                    <Box sx={{ boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.25)', borderRadius: '10px', height: '3em', display: 'flex', width: '17em', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
                         <Box sx={{ display: 'flex', gap: '.8em', margin: '.9em' }}>
                             <Box sx={{ border: '1px solid blue', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px' }}>
                                 <Image src={icon1} alt="icon" />
@@ -39,7 +39,7 @@ export default function WelcomeBack() {
                 </Link>
 
                 <Link href="/registration">      
-                    <Box sx={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', height: '3em', display: 'flex', width: '17em', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
+                    <Box sx={{ boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.25)', borderRadius: '10px', height: '3em', display: 'flex', width: '17em', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
                         <Box sx={{ display: 'flex', gap: '.8em', margin: '1em' }}>
                             <Box sx={{ border: '1px solid blue', width: '30px', height: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px' }}>
                                 <Image src={icon2} alt="icon" />
