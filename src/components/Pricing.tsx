@@ -38,8 +38,8 @@ const Pricing = () => {
         </Box>
 
         <Container sx={{ display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, gap: '2em', justifyContent: 'center', alignItems: 'center', my: '2em' }}>
-          {price.map((item, index) => (
-            <Card key={index} className={` ${index === activeIndex ? classes.active : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', backgroundColor: 'transparent', height: 'fit-content', borderRadius: '20px', width: '15em', cursor: 'pointer' }}>
+          {price.map((item, index) => ( 
+            <Card key={index} className={` ${index === activeIndex ? classes.active : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', backgroundColor: 'transparent', height: 'fit-content', borderRadius: '20px', width: '15em', cursor: 'pointer' }}>
               <CardContent sx={{ margin: '1em' }}>
                 <Typography sx={{ fontSize: '1.5em', mb: '1em', color: index === activeIndex ? 'white' : '#373A82' }} variant="h4">{item.type}</Typography>
                 <Box sx={{ display: 'flex', gap: '1em', justifyContent: 'center', alignItems: 'center' }}>

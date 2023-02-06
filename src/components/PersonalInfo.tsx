@@ -12,7 +12,7 @@ const PersonalInfo = () => {
 
   return (
     <Box>
-        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '3em', md: '6em', xs: '6em' }, left: '2em' }}>
+        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '2em', md: '6em', xs: '6em' }, left: '2em' }}>
 
         <Box>
             <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
@@ -22,7 +22,7 @@ const PersonalInfo = () => {
             </Box>
         </Box>
 
-        <Box sx={{ position: 'relative', bottom: { lg: '1em', xs: '4em' }, right: '.6em', marginLeft: '4.4em', display: 'flex', gap: '1em' }}>
+        <Box sx={{ position: 'relative', bottom: { lg: '.7em', xs: '4em' }, right: '.6em', marginLeft: '4.4em', display: 'flex', gap: '1em' }}>
             <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                 <Box sx={{ width: '1em', height: '1em', backgroundColor: '#2F327D', textAlign: 'center', color: '#fff', borderRadius: '2px' }}>1</Box>
                 <Typography>School Profile</Typography>

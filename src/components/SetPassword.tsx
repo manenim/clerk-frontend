@@ -12,7 +12,7 @@ const setPassword = () => {
     };
   return (
     <Box>
-        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '8em', md: '6em', xs: '6em' }, marginLeft: '2em', right: '0' }}>
+        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '7em', md: '6em', xs: '6em' }, marginLeft: '2em', right: '0' }}>
 
         <Box>
             <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', cursor: 'pointer', alignItems: 'center' }}><ArrowBackIosIcon />back</Typography>
@@ -44,7 +44,7 @@ const setPassword = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '70%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', borderRadius: '10px', width: { lg: '70%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 
