@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { Box, Typography, TextField, Button, FormControl } from '@mui/material';
+import { Box, Typography, TextField, Button, FormControl, MenuItem, Select } from '@mui/material';
 import Link from 'next/link';
 import logo from "../../public/images/svgs/Logo.svg";
 import Image from 'next/image';
@@ -43,7 +43,7 @@ const PersonalInfo = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, ml: { xs: '2.4em' }, mb: { xs: '2em' } }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', borderRadius: '10px', width: { lg: '70%', xs: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, ml: { xs: '2.4em' }, mb: { xs: '2em' } }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 
@@ -52,18 +52,31 @@ const PersonalInfo = () => {
             </Box>
 
             
-            <FormControl sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
-                <TextField id="filled-basic" label="Full Name" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
+            <FormControl variant="filled" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1.5em' }}>
+               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Full Name</label>
+                    <TextField id="filled-basic" placeholder='Enter your full name' sx={{ width: '23em' }} variant="outlined" required />
+               </Box> 
+               
+               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Phone Number</label>
+                    <TextField id="filled-basic" placeholder='Enter school phone number' sx={{ width: '23em' }} variant="outlined" required />
+               </Box>
 
-                <TextField id="filled-basic" label="Phone Number" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
+               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Email Address</label>
+                    <TextField id="filled-basic" placeholder='Enter school email address' sx={{ width: '23em' }} variant="outlined" required />
+               </Box> 
 
-                <TextField id="filled-basic" label="Email address" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
+               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Address</label>
+                    <TextField id="filled-basic" placeholder='Enter your address' sx={{ width: '23em' }} variant="outlined" required />
+               </Box> 
 
-                <TextField id="filled-basic" label="Address" required sx={{ width: { lg: '20em', md: '30em', xs: '24em' } }} variant="filled" />
-
-                <Button href='/setPassword' variant="contained" sx={{ width: { lg: '20em', md: '30em', xs: '24em' }, background: '#2F327D' }}>
+               <Button href='/setPassword' variant="contained" sx={{ width: '23em', background: '#2F327D', height: '4em' }}>
                   Next
                 </Button>
+
             </FormControl>
 
 

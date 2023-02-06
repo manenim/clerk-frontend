@@ -44,7 +44,7 @@ const setPassword = () => {
             
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '70%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
                 <Image src={logo} alt="logo"  />
 
@@ -54,12 +54,18 @@ const setPassword = () => {
 
             
             <FormControl sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
-                <TextField id="filled-basic" label="Password" required sx={{ width: { lg: '20em', md: '30em', xs: '20em' } }} variant="filled" />
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Password</label>
+                    <TextField id="filled-basic" placeholder='Enter a secure password' sx={{ width: '23em' }} variant="outlined" required />
+               </Box> 
+               
+               <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                    <label>Confirm Password</label>
+                    <TextField id="filled-basic" placeholder='Confirm password' sx={{ width: '23em' }} variant="outlined" required />
+               </Box>
 
-                <TextField id="filled-basic" label="Confirm Password" required sx={{ width: { lg: '20em', md: '30em', xs: '20em' } }} variant="filled" />
 
-
-                <Button href='/pricing' variant="contained" sx={{ width: { lg: '20em', md: '30em', xs: '24em' }, background: '#2F327D' }}>
+                <Button href='/pricing' variant="contained" sx={{ width: { lg: '20em', md: '30em', xs: '24em' }, background: '#2F327D', height: '3.5em' }}>
                   Next
                 </Button>
             </FormControl>
