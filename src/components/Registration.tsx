@@ -18,7 +18,7 @@ const Registration = () => {
 
   return (
     <Box>
-        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '3em', md: '13em', xs: '6em' }, right: '0' }}>
+        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '20em', xs: "2.9em" }, bottom: { lg: '2.4em', md: '13em', xs: '6em' }, right: '0' }}>
 
         <Box>
             <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
@@ -28,7 +28,7 @@ const Registration = () => {
             </Box>
         </Box>
 
-        <Box sx={{ position: 'relative', bottom: { lg: '1.6em', xs: '4em' }, right: '1em', marginLeft: '3em', display: 'flex', gap: '1em' }}>
+        <Box sx={{ position: 'relative', bottom: { lg: '1em', xs: '4em' }, right: '1em', marginLeft: '3em', display: 'flex', gap: '1em' }}>
             <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                 <Box sx={{ width: '1em', height: '1em', backgroundColor: '#2F327D', textAlign: 'center', color: '#fff', borderRadius: '2px' }}>1</Box>
                 <Typography>School Profile</Typography>
