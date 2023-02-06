@@ -98,3 +98,8 @@ a {
   -webkit-box-shadow: -4px 0px 63px 0px rgba(0, 171, 85, 0.56);
   -moz-box-shadow: -4px 0px 63px 0px rgba(0, 171, 85, 0.56) !important;
 }
+
+.active {
+  background-color: #373A82;
+  color: #fff;
+}

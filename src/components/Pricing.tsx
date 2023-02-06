@@ -3,21 +3,10 @@ import { Box, Typography, Card, CardContent, Button, Container } from "@mui/mate
 import logo from "../../public/images/svgs/Logo.svg";
 import { price } from "@/constants/pricing";
 import Image from "next/image";
-import { makeStyles } from "@mui/styles";
 
-
-const useStyles = makeStyles({
-  active: {
-    backgroundColor: "#373A82 !important",
-    color: "white",
-    boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.25)',
-    marginBottom: '4em'
-  }
-});
 
 const Pricing = () => {
   const [activeIndex, setActiveIndex] = useState(2);
-  const classes = useStyles();
 
   const handleClick = (index: number) => {
     setActiveIndex(index);
@@ -39,7 +28,7 @@ const Pricing = () => {
 
         <Container sx={{ display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, gap: '2em', justifyContent: 'center', alignItems: 'center', my: '2em' }}>
           {price.map((item, index) => ( 
-            <Card key={index} className={` ${index === activeIndex ? classes.active : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', backgroundColor: 'transparent', height: 'fit-content', borderRadius: '20px', width: '15em', cursor: 'pointer' }}>
+            <Card key={index} className={` ${index === activeIndex ? "active" : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', backgroundColor: 'transparent', height: 'fit-content', borderRadius: '20px', width: '15em', cursor: 'pointer' }}>
               <CardContent sx={{ margin: '1em' }}>
                 <Typography sx={{ fontSize: '1.5em', mb: '1em', color: index === activeIndex ? 'white' : '#373A82' }} variant="h4">{item.type}</Typography>
                 <Box sx={{ display: 'flex', gap: '1em', justifyContent: 'center', alignItems: 'center' }}>
