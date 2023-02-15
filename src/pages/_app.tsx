@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
     events.on("routeChangeError", handleComplete);
 
     return () => {
-      events.off("routeChangeStart", handleStart);
+      events.off("routeChangeStarts", handleStart);
       events.off("routeChangeComplete", handleComplete);
       events.off("routeChangeError", handleComplete);
     };
