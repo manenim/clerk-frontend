@@ -14,7 +14,7 @@ const SummaryCard = ({ topic, subject }: SummaryCardInter) => {
    return (
       <Box
          sx={{
-            width: "20rem",
+            width: "15rem",
             height: "12rem",
             justifyContent: "space-between",
             display: "flex",
@@ -25,7 +25,7 @@ const SummaryCard = ({ topic, subject }: SummaryCardInter) => {
       >
          <div className="grid place-content-center h-[90%]">
             <div className="h-[4.3rem] w-[4.3rem] grid place-content-center bg-gradient-to-tl from-blue-400 via-blue-500 to-white rounded-md">
-               <p>{subject}</p>
+               <p className="text-white font-semibold">{subject}</p>
             </div>
          </div>
          <div className="flex px-2 justify-between  items-center pb-2">
