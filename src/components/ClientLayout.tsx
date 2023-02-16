@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
+
 type LayoutProps = {
     children:ReactNode
 }
@@ -15,10 +16,14 @@ const ClientLayout = ({ children }: LayoutProps) => {
          <Appbar />
          <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-               <Grid item xs={2.5}>
+               <Grid
+                  item
+                  xs={2.5}
+                  sx={{ display: { xl: "block", sm:"none", xs: "none", md: "none", lg: "block" } }}
+               >
                   <PrySidebar />
                </Grid>
-               <Grid item xs={9.5} sx={{overflowY:"auto", height:"92vh"}}>
+               <Grid item xs={9.5} sx={{ overflowY: "auto", height: "92vh" }}>
                   {children}
                </Grid>
             </Grid>
