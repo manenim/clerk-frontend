@@ -17,6 +17,7 @@ const PrySidebar = () => {
                borderRight: "1px solid #D2D2D2",
                display: "flex",
                flexDirection: "column",
+               height: "92vh",
             }}
          >
             <Box
