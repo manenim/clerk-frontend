@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -107,4 +108,233 @@ a {
   color: #fff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   margin-bottom: 3.5em;
+}
+
+.next-button {
+  width: 100%;
+  background-color: #242F9B;
+  border: none;
+  height: 2.5em;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 1.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.password-btn {
+  width: 100%;
+  background-color: #242F9B;
+  border: none;
+  height: 2.5em;
+  color: #fff;
+  border-radius: 3px;
+  position: relative;
+  bottom: 2em;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.inactive {
+  background-color: transparent;
+  border: 1px solid #242F9B;
+  color: #242F9B;
+  border-radius: 3px;
+  width: 100%;
+  height: 2.9em;
+  margin-top: 1em;
+  border: 1px solid #242F9B;
+
+  cursor: pointer;
+
+}
+
+.btn-active {
+  background-color: #FF6E31;
+  width: 100%;
+  height: 2.9em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.select-field {
+  width: 27em;
+  border-radius: 3px;
+  height: 4em;
+  cursor: pointer;
+  color: #000;
+  background-color: transparent ;
+
+}
+
+.select-field:focus {
+  outline: .8px solid #242F9B;
+}
+
+.input-field {
+  width: 27em !important;
+  border-radius: 3px;
+  height: 4em;
+
+  color: #000;
+}
+
+.input-field:focus {
+  outline: .8px solid #242F9B;
+}
+
+.select-field option[value=""][disabled] {
+  color: lightgray;
+}
+.select-field option[value=""][disabled]:hover {
+  color: gray;
+}
+
+
+
+@media (max-width: 767px) {
+  .next-button {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 640px) {
+  .slider {
+    display: none;
+  }
+
+  .select-field {
+    width: 27em;
+  }
+
+  .input-field {
+    width: 23em ;
+  }
+
+  .school-info {
+    position: relative;
+    left: .7em;
+  }
+
+  .personal-info {
+    position: relative;
+    left: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+  .select-field {
+    width: 40em;
+    height: 5em;
+
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .img-logo {
+    position: relative;
+    left: 3.6em;
+  }
+
+  .personal-info {
+    width: 70%;
+    position: relative;
+    left: 3.6em;
+  }
+  
+  .reg-container {
+    position: relative;
+    bottom: 15em;
+  }
+
+  .back-btn {
+    display: flex;
+    gap: 20em;
+    position: relative;
+    bottom: 2em;
+  }
+  .school-info {
+    position: relative;
+    right: 3em;
+  }
+
+  .input-field {
+    width: 40em !important;
+    height: 5em;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+  .reg-container {
+    position: relative;
+    top: 9em;
+  }
+}
+
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1900px) {
+  .select-field {
+    width: 32em;
+    height: 4em;
+  }
+  
+
+  .input-field {
+    width: 32em !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (height: 649px) {
+  .school-info {
+    position: relative;
+    right: 1em;
+  }
+
+  .logo-position {
+    position: relative;
+    right: 3.5em;
+  }
+
+  .personal-info {
+    width: 100%;
+    position: relative;
+    right: .7em;
+  }
+
+  .form-position {
+    width: 100%;
+  }
+
+  .input-field {
+    width: 32em !important;
+  }
+
+  .select-field {
+    width: 32em;
+  }
+
+  .img-position {
+    position: relative;
+    right: .9em;
+  }
+
+  .line1 {
+    position: relative;
+    right: 1.5em;
+    width: 4em;
+  }
+
+  .line2 {
+    position: relative;
+    right: 1.5em;
+    width: 4em;
+  }
+
+  
 }
