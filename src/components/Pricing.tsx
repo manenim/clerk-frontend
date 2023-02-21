@@ -13,7 +13,7 @@ const Pricing = () => {
   };
 
   return (
-    <Box>
+    <Container>
         <header>
             <nav style={{ margin: '1em' }}>
                 <Image src={logo} alt="logo" />
@@ -23,35 +23,35 @@ const Pricing = () => {
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '.5em' }}>
             <Typography variant="h4" sx={{ textAlign: 'center' }} fontWeight="700" color="#373A82">The Right Plans Just For You</Typography>
 
-            <Typography sx={{ width: { lg: '50%', xs: '90%' }, fontWeight: '200', textAlign: 'center' }}>Our plans offer different levels of features and pricing to meet a variety of needs. All payments are securely processed and protected by industry-standard encryption.</Typography>
+            <Typography sx={{ width: { lg: '50%', xs: '90%', xl: '100%' }, fontWeight: '200', textAlign: 'center' }}>Our plans offer different levels of features and pricing to meet a variety of needs. All payments are securely processed and protected by industry-standard encryption.</Typography>
         </Box>
 
         <Container sx={{ display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, gap: '2em', justifyContent: 'center', alignItems: 'center', my: '2em' }}>
           {price.map((item, index) => ( 
-            <Card key={index} className={` ${index === activeIndex ? "active" : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', backgroundColor: 'transparent', height: 'fit-content', borderRadius: '20px', width: '15em', cursor: 'pointer' }}>
-              <CardContent sx={{ margin: '1em' }}>
+            <Card key={index} className={` ${index === activeIndex ? "active" : ""}`} onClick={() => handleClick(index)} sx={{  boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.25)', border: '1px solid #F2F2F2', backgroundColor: 'transparent', height: { lg: 'fit-content', md: '30em', sm: '28em', xs: '23em' }, borderRadius: '20px', width: { lg: '15em', md: '20em', sm: '19em', xs: '15em' }, cursor: 'pointer' }}>
+              <CardContent sx={{ margin: { lg: '1em', md: '4em', sm: '3em', xs: '1em' } }}>
                 <Typography sx={{ fontSize: '1.5em', mb: '1em', color: index === activeIndex ? 'white' : '#373A82' }} variant="h4">{item.type}</Typography>
-                <Box sx={{ display: 'flex', gap: '1em', justifyContent: 'center', alignItems: 'center' }}>
+                <Box sx={{ display: 'flex', gap: { lg: '.7em', md: '2em', xs: '1em'  }, justifyContent: 'center', alignItems: 'center' }}>
                   <small>{item.icon}</small>
                   <Typography sx={{ fontSize: '.9em' }}>{item.text1}</Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', gap: '.7em' }}>
+                <Box sx={{ display: 'flex', gap: { lg: '.7em', md: '1.5em', xs: '1em' } }}>
                   <small>{item.icon}</small>
                   <Typography sx={{ fontSize: '.9em' }}>{item.text2}</Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', gap: '.7em' }}>
+                <Box sx={{ display: 'flex', gap: { lg: '.7em', md: '1.5em', xs: '1em'  } }}>
                   <small>{item.icon}</small>
                   <Typography sx={{ fontSize: '.9em' }}>{item.text3}</Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', gap: '.7em' }}>
+                <Box sx={{ display: 'flex', gap: { lg: '.7em', md: '1.5em', xs: '1em'  } }}>
                   <small>{item.icon}</small>
                   <Typography sx={{ fontSize: '.9em' }}>{item.text4}</Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', gap: '.7em' }}>
+                <Box sx={{ display: 'flex', gap: { lg: '.7em', md: '1.5em', xs: '1em'  } }}>
             
                   <Typography sx={{ color: index === activeIndex ? "white" : "#373A82", fontSize: '1.5em', fontWeight: '700', mt: '1em' }}>
                   <small style={{ fontSize: '.7em', fontWeight: '200' }}>$</small>
@@ -62,14 +62,14 @@ const Pricing = () => {
                 </Box>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <Button sx={{ backgroundColor: index === activeIndex ? "#FF6E31" : "#FFE2D6", width: '20em', mt: '1em' }} variant="contained">{item.action}</Button>
+                  <button className={index === activeIndex ? "btn-active" : "inactive"}>{item.action}</button>
                 </Box>
               </CardContent>
             </Card>
           ))}
         </Container>
 
-    </Box>
+    </Container>
   )
 }
 
