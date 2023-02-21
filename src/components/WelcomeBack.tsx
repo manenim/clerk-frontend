@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import logo from "../../public/images/svgs/Logo.svg";
 import Image from "next/image";
-import icon1 from '../../public/images/svgs/school.svg';
+import icon1 from '../../public/images/icons/school.svg';
 import icon2 from '../../public/images/icons/Vector.png'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
