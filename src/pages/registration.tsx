@@ -2,15 +2,14 @@ import { Typography } from "@mui/material";
 import { Container, Box } from "@mui/material";
 import { Slider, Registration } from "@/components";
 
-export default function teacherLogin() {
+export default function registration() {
   return (
-  
-      <Box sx={{ display: 'grid', marginBottom: { xs: '2em' }, marginLeft: { xs: '.4em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: 'gridTemplateRows'} }}>
-        <Box >
+      <Box sx={{ display: 'grid', marginBottom: { md: '3em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: 'gridTemplateRows'} }}>
+        <Box className="slider">
           <Slider />
         </Box>
        
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box className="reg-page" sx={{  display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
           <Registration />
         </Box>
       </Box>
