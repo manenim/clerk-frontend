@@ -201,12 +201,13 @@ a {
   .slider {
     display: none;
   }
-.select-field {
+ .select-field {
     width: 27em !important;
   }
 
   .input-field {
-    wi
+    width: 27em !important;
+  }
 
   .school-info {
     position: relative;
