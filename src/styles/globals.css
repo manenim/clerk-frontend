@@ -335,5 +335,14 @@ a {
   
 }
 
+@media only screen and (width: 375px) and (height: 812px) {
+  .input-field {
+    width: 35em !important;
+  }
+
+  .select-field {
+    width: 35em !important;
+  }
+}
 
 
