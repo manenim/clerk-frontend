@@ -23,7 +23,7 @@ export default function Slider() {
             <Box sx={{ position: 'relative', bottom: { lg: '14em',  xs: '12em', xl: '15em' }, left: { lg: '1.8em', xl: '4em', xs: '3em' }  }}>
               <Typography sx={{ fontSize: { xs: '2.5em' } }} color="#fff" fontWeight="700" variant="h3">{item.headText1}</Typography>
               <Typography  sx={{ fontSize: { xs: '2.2em' } }}  color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
-              <Typography color="rgba(173, 173, 173, 0.9)" fontWeight="100" sx={{ fontSize: { lg: '3em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>
+              <Typography color="rgba(173, 173, 173, 0.9)" fontWeight="100" sx={{ fontSize: { lg: '2.5em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>
             </Box>
           </Box>
         ))}
