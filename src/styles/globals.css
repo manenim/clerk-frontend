@@ -160,6 +160,7 @@ a {
   width: 27em;
   border-radius: 3px;
   height: 4em;
+  border: 1px solid grey;
   cursor: pointer;
   color: #000;
   background-color: transparent ;
