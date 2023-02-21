@@ -1,60 +1,75 @@
 import React from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { Box, Typography, TextField, Button, FormControl } from '@mui/material';
+import { Box, Typography, FormControl, Container } from '@mui/material';
 import Link from 'next/link';
 import logo from "../../public/images/svgs/Logo.svg";
 import Image from 'next/image';
 
 const PersonalInfo = () => {
 
-    const handleGoBack = () => {
-        (window as any).history.back();
-    }
+    const handleBackButton = () => {
+        window.history.back();
+      };
+
 
   return (
+    <Container sx={{ mt: { lg: '2em', xl: '0', xs: '2em', sm: '20em'  } }}>
+         <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
+
+<Box className="back-btn" sx={{ display: 'flex', gap: { lg: '15em', xl: '19em', xs: "4em", md: '17em' }, position: 'relative', bottom: { lg: '1em', md: '5em' } }}>
+
+<Box  sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', sm: 'flex'  } }}>
+    <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
+</Box>
     <Box>
-        <Box sx={{ position: 'relative', display: 'flex', gap: { lg: '15em', xs: "1em" }, bottom: { lg: '6em', md: '6em', xs: '2em' }, marginLeft: '2em', right: '0' }}>
+        <Typography>Don't have an account? <Link style={{ color: 'blue' }} href="/registration">Create an account</Link></Typography>
+    </Box>
+</Box>
 
-        <Box>
-            <p onClick={handleGoBack} style={{ display: 'flex', justifyContent: 'center', cursor: 'pointer', alignItems: 'center' }}><ArrowBackIosIcon />back</p>
+
+<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '110%', md: '80%', sm: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em',  }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', ml: { lg: '3.1em', xl: '3em', xs: '0' }, position: 'relative', right: { sm: '4.1em', md: '7.3em', lg: '0' } }}>
+        <Box className="img-logo" sx={{ ml: { xl: '.9em', xs: '.7em', lg: '0em', md: '6em' } }} >
+            <Image src={logo} alt="logo" />
         </Box>
-            <Box>
-                <Typography>Don't have an account? <Link style={{ color: 'blue' }} href="/registration">Create an account</Link></Typography>
-            </Box>
-        </Box>
 
-
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.25)', borderRadius: '10px', width: { lg: '60%', xs: '90%' }, justifyContent: 'center', margin: '0 auto' }}>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em', margin: '.9em' }}>
-                <Image src={logo} alt="logo"  />
-
-                <Typography color="#2F327D" sx={{ fontWeight: '700' }} variant='h4'>Sign In</Typography>
-                <Typography sx={{ fontSize: '.8em' }}>Sign in to access your account and all the features we have to offer.</Typography>
-            </Box>
-
-            
-            <FormControl sx={{ marginBottom: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '3em' }}>
-                <TextField id="filled-basic" label="Email" required sx={{ width: { lg: '20em', md: '30em', xs: '19em' } }} variant="filled" />
-
-                <TextField id="filled-basic" label="Password" required sx={{ width: { lg: '20em', md: '30em', xs: '19em' } }} variant="filled" />
-
-                <Box sx={{ position: 'relative', bottom: '2em', left: '6em' }}>
-                    <Typography sx={{ textDecoration: 'underline', color: '#494C8D', cursor: 'pointer' }}>Forgot password?</Typography>
-                </Box>
-
-
-                <Button href='/' variant="contained" sx={{ width: { lg: '20em', md: '30em', xs: '18em' }, background: '#2F327D' }}>
-                  Sign In
-                </Button>
-            </FormControl>
-
-            <Box sx={{ width: '90%', ml: '1em', mb: '1em' }}>
-                <Typography sx={{ fontSize: '.7em', color: 'gray', textAlign: 'center' }}>By signing in, you agree to our <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.4em' }} href="/">Terms of Service</Link> and <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.4em' }} href="/">Privacy Policy.</Link></Typography>
-            </Box>
-
-
+        <Box className="personal-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', ml: { md: '6em', lg: '0', xl: '.9em', xs: '.1em' }, width: { md: '100%', xl: '90%' } }}>
+            <Typography color="#242F9B" sx={{ fontWeight: '700', fontSize: { xs: '1.9em', lg: '2.2em' } }} variant='h4'>Sign In</Typography>
+            <Typography sx={{ color: '#808080', width: { xs: '90%', lg: '100%', xl: '100%', sm: '90%' } }}>Sign in to access your account and all the features we have to offer.</Typography>
         </Box>
     </Box>
+
+    
+    <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1.5em', mt: '.5em' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+            <label>Email</label>
+            <input type="email" className="input-field" placeholder="Enter your email" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+        </Box> 
+
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+            <label>Password</label>
+            <input type="password" className="input-field" placeholder="Enter your password" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+        </Box>
+
+        <Box sx={{ position: 'relative', bottom: '0em', left: '6em' }}>
+            <Typography sx={{ textDecoration: 'underline', color: '#494C8D', cursor: 'pointer' }}>Forgot password?</Typography>
+        </Box>
+
+        <Link style={{ width: '100%' }} href="/"> 
+            <button className='next-button'>Sign In</button>
+        </Link>
+
+
+    </FormControl>
+
+    <Box sx={{ width: '90%', ml: '1em', mb: '1em' }}>
+        <Typography sx={{ fontSize: '.7em', color: 'gray', textAlign: 'center' }}>By signing in, you agree to our <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Terms of Service</Link> and <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Privacy Policy.</Link></Typography>
+    </Box>
+
+
+</Box>
+</Container>
+    </Container>
   )
 }
 
