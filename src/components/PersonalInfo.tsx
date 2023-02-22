@@ -50,7 +50,7 @@ const PersonalInfo = () => {
 
             </Box>
 
-            <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '105%', md: '80%', sm: '100%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: { md: '58em', lg: 'fit-content', sm: '55em' } }}>
+            <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '90%', md: '80%', sm: '100%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: { md: '58em', lg: 'fit-content', sm: '55em' } }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', ml: { lg: '3.1em', xl: '3em', xs: '1.3em', md: '0em', sm: '1em' }, position: 'relative', right: { md: '3em', lg: '0', sm: '0', xl: "0" } }}>
                     <Box className="img-position" sx={{ ml: { xs: '.9em', lg: '0', xl: '0', sm: '4em', md: '10em' } }} >
                         <Image src={logo} alt="logo" />
