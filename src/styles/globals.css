@@ -10,6 +10,11 @@
   font-family: "Regular";
   src: url("../../public/fonts/Gordita/Gordita-Regular.otf");
 }
+
+html body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -160,8 +165,8 @@ a {
   width: 27em;
   border-radius: 3px;
   height: 4em;
-  border: 1px solid grey;
   cursor: pointer;
+  border: 1px solid grey;
   color: #000;
   background-color: transparent ;
 
@@ -202,12 +207,13 @@ a {
   .slider {
     display: none;
   }
- .select-field {
-    width: 27em !important;
+
+  .select-field {
+    width: 27em;
   }
 
   .input-field {
-    width: 27em !important;
+    width: 23em ;
   }
 
   .school-info {
@@ -335,14 +341,6 @@ a {
   
 }
 
-@media only screen and (width: 375px) and (height: 812px) {
-  .input-field {
-    width: 35em !important;
-  }
 
-  .select-field {
-    width: 35em !important;
-  }
-}
 
 
