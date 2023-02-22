@@ -58,7 +58,7 @@ const Registration = () => {
                 
             </Box>
 
-            <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: { md: '58em', lg: 'fit-content', sm: '55em' }  }}>
+            <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '90%', md: '80%', sm: '100%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: { md: '58em', lg: 'fit-content', sm: '55em' }  }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', ml: { lg: '3em', xl: '2em', xs: '1.8em' } }}>
                     <Box className="logo-position" sx={{ ml: { xs: '.6em', lg: '2.5em', xl: '2em', sm: '0', }, position: 'relative', right: { xs: '0', lg: '2.5em', sm: '2.5em', md: '2.5em' } }}>
 
