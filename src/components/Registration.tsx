@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Box, Typography, FormControl, Container } from '@mui/material';
 import Link from 'next/link';
-import logo from "../../public/images/svgs/Logo.svg";
+import logo from "../../public/images/auth/Logo.png";
 import Image from 'next/image';
 
 const Registration = () => {
@@ -17,10 +17,10 @@ const Registration = () => {
   };
 
   return (
-    <Container sx={{ marginTop: { lg: '2em', xl: '2em', md: '20em', xs: '3em', sm: '20em' } }}>
+    <Container sx={{ marginTop: { lg: '3em', xl: '2em', md: '20em', xs: '3em', sm: '20em' }, pl: { lg: '1.9em', xl: '6em' } }}>
         <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
 
-            <Box className="back-btn" sx={{ display: 'flex', gap: { lg: '15em', xs: "2em", md: '17em' }, position: 'relative', bottom: { lg: '1em', md: '5em' } }}>
+            <Box className="back-btn" sx={{ display: 'flex', gap: { lg: '15em', xs: "2em", md: '17em', xl: '19em' }, position: 'relative', bottom: { lg: '1em', md: '5em' } }}>
 
             <Box sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', sm: 'flex'  } }}>
                 <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
@@ -30,11 +30,11 @@ const Registration = () => {
                 </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', gap: { lg: '.2em', xs: '.8em'} }}>
+            <Box sx={{ display: 'flex', zIndex: '9999', gap: { lg: '.9em', xs: '.8em'} }}>
                 <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                     <Box sx={{ width: '1.3em', height: '1.3em', backgroundColor: '#242F9B', textAlign: 'center', color: '#fff', borderRadius: '2px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>1</Box>
                     <Link href="/registration">
-                        <Typography>School Profile</Typography>
+                        <Typography sx={{ fontSize: '.8em' }}>School Profile</Typography>
                     </Link>
                     <Box className="line1" sx={{ borderBottom: '1px solid #2F327D', width: '3em' }} />
                 </Box>
@@ -43,7 +43,7 @@ const Registration = () => {
                     
                         <Box sx={{ width: '1.3em', height: '1.3em', backgroundColor: '#808080', textAlign: 'center', color: '#fff', borderRadius: '2px',  display: 'flex', justifyContent: 'center', alignItems: 'center' }}>2</Box>
                         <Link href="/personalInfo">  
-                            <Typography>Personal Profile</Typography>
+                            <Typography sx={{ fontSize: '.8em' }}>Personal Profile</Typography>
                         </Link>
                         <Box className="line2" sx={{ borderBottom: '1px solid #B0B0B0', width: '3em' }} />
                 </Box>
@@ -51,53 +51,52 @@ const Registration = () => {
                 <Box sx={{ display: 'flex', gap: '.6em', alignItems: 'center' }}>
                     <Box sx={{ width: '1.3em', height: '1.3em', backgroundColor: '#808080', textAlign: 'center', color: '#fff', borderRadius: '2px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>3</Box>
                     <Link href="/setPassword">
-                        <Typography>Set Up Password</Typography>
+                        <Typography sx={{ fontSize: '.8em' }}>Set Up Password</Typography>
                     </Link>
                 </Box>
 
                 
             </Box>
 
-            <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '90%', md: '80%', sm: '100%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: { md: '58em', lg: 'fit-content', sm: '55em' }  }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', ml: { lg: '3em', xl: '2em', xs: '1.8em' } }}>
-                    <Box className="logo-position" sx={{ ml: { xs: '.6em', lg: '2.5em', xl: '2em', sm: '0', }, position: 'relative', right: { xs: '0', lg: '2.5em', sm: '2.5em', md: '2.5em' } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: 'fit-content', pb: '2em' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', pl: { lg: '1.7em', xs: '0em', xl: '0' }, py: '.5em' }}>
 
-                        <Image src={logo} alt="logo"  />
-                    </Box>
-
-                    <Box className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em',  }}>
+                    <Box className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', }}>
+                        <Box sx={{ py: '1.5em' }}>
+                            <Image src={logo} alt="logo"  />
+                        </Box>
                         <Typography color="#242F9B" sx={{ fontWeight: '700' }} variant='h4'>School Information</Typography>
-                        <Typography sx={{ color: '#808080' }}>Please fill in the correct information about the school below </Typography>
+                        <Typography sx={{ color: '#808080', width: '100%', }}>Please fill in the correct information about the school below </Typography>
                     </Box>
                 </Box>
 
                 
-                <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em', mt: '.5em' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2.7em', mt: '.5em' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em',  }}>
                     <label>School Name</label>
-                    <input type="text" className="input-field" placeholder="Enter School Name" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+                    <input type="text" className="input-field" placeholder="Enter School Name" style={{ padding: '10px', borderRadius: '5px' }} required />
                     </Box> 
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
                     <label>School Address</label>
-                    <input type="text" className="input-field" placeholder="Enter School Address" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+                    <input type="text" className="input-field" placeholder="Enter School Address" style={{ padding: '10px', borderRadius: '5px', }} required />
                     </Box>
 
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
                     <label>Registration Status</label>
-                    <select className='select-field'>
+                    <select className='select-field' style={{color: '#757575'}}>
                         <option value="" disabled selected hidden>Registration Status</option>
-                        <option>Registered</option>
-                        <option>Not Registered</option>
+                        <option style={{ color: '#000' }}>Registered</option>
+                        <option style={{ color: '#000' }}>Not Registered</option>
                     </select>
                     </Box> 
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
                     <label>Education Level</label>
-                    <select className='select-field'>
+                    <select className='select-field'  style={{color: '#757575'}}>
                         <option value="" disabled selected hidden>Education Level</option>
-                        <option>100</option>
-                        <option>200</option>
+                        <option style={{ color: '#000' }}>100</option>
+                        <option style={{ color: '#000' }}>200</option>
                     </select>
                     </Box>
 

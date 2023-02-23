@@ -15,16 +15,24 @@ export default function Slider() {
   }, []);
 
   return (
-    <Box sx={{ position: 'relative', width: '100%' }}>
+    <Box sx={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '120vh',
+      overflow: 'hidden',
+    }}>
       <Carousel navButtonsAlwaysInvisible={true} stopAutoPlayOnHover={false} indicators={false} >
         {slider.map((item) => (
-          <Box key={item.id} sx={{ width: '100%', height: '100vh' }}>
-            <Image src={item.image} width={screenWidth < 600 ? 700 : (screenWidth > 1400 ? 1000 : 1000)} height={screenWidth > 1400 ? 900 : 700} alt="slider" />
-            <Box sx={{ position: 'relative', bottom: { lg: '14em',  xs: '12em', xl: '15em' }, left: { lg: '1.8em', xl: '4em', xs: '3em' }  }}>
-              <Typography sx={{ fontSize: { xs: '2.5em' } }} color="#fff" fontWeight="700" variant="h3">{item.headText1}</Typography>
-              <Typography  sx={{ fontSize: { xs: '2.2em' } }}  color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
-              <Typography color="rgba(173, 173, 173, 0.9)" fontWeight="100" sx={{ fontSize: { lg: '2.5em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>
+          <Box key={item.id} sx={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Image className="slider-image" src={item.image} alt="slider" width={screenWidth > 1000 ? 700 : 1000} height={screenWidth > 1000 ? 800 : 1200 } />
+            <Box sx={{ position: 'absolute', bottom: { lg: '10em',  xs: '12em', xl: '7em' }, left: { lg: '3em', xl: '4em', xs: '3em' }, zIndex: "1", }}>
+              <Typography className="slider-text" sx={{ fontSize: { xs: '2.9em' } }} color="#fff" fontWeight="700" variant="h3">{item.headText1}</Typography>
+              <Typography className="slider-text"  sx={{ fontSize: { xs: '2.8em' } }}  color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
+              <Typography className="slider-text" color="#ADADAD" fontWeight="400" sx={{ fontSize: { lg: '2.5em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>
             </Box>
+            <Box sx={{ position: 'absolute', bottom: 0, right: '52%', width: '100%', height: '50em', filter: 'blur(60px)', background: 'linear-gradient(to top, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0))', zIndex: "0" }} />
           </Box>
         ))}
       </Carousel>

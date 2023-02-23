@@ -1,6 +1,6 @@
 export const slider = [
     {
-        image: require('../../public/images/svgs/c1.svg'),
+        image: require('../../public/images/svgs/cj1.jpg'),
         headText1: 'We Empower',
         headText2: 'Education With AI:',
         lightText: 'The Smart Note Note Generator',
@@ -8,14 +8,14 @@ export const slider = [
     },
 
     {
-        image: require('../../public/images/svgs/c2.svg'),
+        image: require('../../public/images/svgs/cj2.jpg'),
         headText1: 'We Empower',
         headText2: 'Education With AI:',
         lightText: 'The Smart Note Note Generator',
         id: '2'
     },
     {
-        image: require('../../public/images/svgs/c3.svg'),
+        image: require('../../public/images/svgs/cc3.jpg'),
         headText1: 'We Empower',
         headText2: 'Education With AI:',
         lightText: 'The Smart Note Note Generator',

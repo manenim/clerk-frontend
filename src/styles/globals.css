@@ -10,11 +10,6 @@
   font-family: "Regular";
   src: url("../../public/fonts/Gordita/Gordita-Regular.otf");
 }
-
-html body {
-  overflow-x: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -162,40 +157,112 @@ a {
 }
 
 .select-field {
-  width: 27em;
+  width: 28em;
   border-radius: 3px;
   height: 4em;
   cursor: pointer;
-  border: 1px solid grey;
   color: #000;
+  border: 1px solid #EAEBEC;
   background-color: transparent ;
 
 }
+
 
 .select-field:focus {
   outline: .8px solid #242F9B;
 }
 
 .input-field {
-  width: 27em !important;
+  width: 28em ;
   border-radius: 3px;
   height: 4em;
-
+  border: 1px solid #EAEBEC;
   color: #000;
+  
+}
+
+
+@media screen and (max-width: 640px) {
+  .input-field {
+    width: 25em !important;
+  }
+
+  /* .input-field1 {
+    width: 25em;
+  } */
+
+  .select-field {
+    width: 25em;
+  }
 }
 
 .input-field:focus {
   outline: .8px solid #242F9B;
 }
 
+.input-field1:focus {
+  outline: .8px solid #242F9B; 
+}
+
 .select-field option[value=""][disabled] {
-  color: lightgray;
-}
-.select-field option[value=""][disabled]:hover {
-  color: gray;
+  color: #757575;
 }
 
 
+.select-field::placeholder {
+  color: #757575;
+}
+
+
+/* .gradient-03 {
+  position: absolute;
+  width: 30em;
+  height: 600px;
+  left: 10%;
+  bottom: 0;
+  
+  background: rgba(0, 0, 0, 0.35);
+  filter: blur(10px);
+  transform: rotate(-90.2deg);
+} */
+
+/* .gradient-03 {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 100%;
+  height: 30em;
+  filter: blur(40px);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 99;
+} */
+
+.slider-text {
+  z-index: 99;
+  
+}
+
+/* .slider {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.form-position {
+  position: relative;
+  top: 40px; 
+  height: fit-content; 
+ 
+} */
+
+.slide {
+  height:120vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 767px) {
   .next-button {
@@ -208,13 +275,13 @@ a {
     display: none;
   }
 
-  .select-field {
-    width: 27em;
+  /* .select-field {
+    width: 27em !important;
   }
 
   .input-field {
-    width: 23em ;
-  }
+    width: 100% !important;
+  } */
 
   .school-info {
     position: relative;
@@ -229,11 +296,11 @@ a {
 }
 
 @media only screen and (min-width: 728px) and (max-width: 1024px) {
-  .select-field {
+  /* .select-field {
     width: 40em;
     height: 5em;
 
-  }
+  } */
 
   .slider {
     display: none;
@@ -266,10 +333,10 @@ a {
     right: 3em;
   }
 
-  .input-field {
+  /* .input-field {
     width: 40em !important;
     height: 5em;
-  }
+  } */
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -279,6 +346,18 @@ a {
   }
 }
 
+@media only screen and (width: 375px) and (height: 812px) {
+  /* .input-field {
+    width: 30em !important;
+  }
+
+  .select-field {
+    width: 30em !important;
+  } */
+}
+
+
+
 
 @media only screen and (min-device-width: 1400px) and (max-device-width: 1900px) {
   .select-field {
@@ -286,9 +365,14 @@ a {
     height: 4em;
   }
   
+  .slider-image {
+    width: 850px;
+    height: 900px;
+  }
 
   .input-field {
-    width: 32em !important;
+    width: 32em;
+    height: 4em;
   }
 }
 
@@ -309,9 +393,9 @@ a {
     right: .7em;
   }
 
-  .form-position {
+  /* .form-position {
     width: 100%;
-  }
+  } */
 
   .input-field {
     width: 32em !important;
@@ -340,7 +424,6 @@ a {
 
   
 }
-
 
 
 
