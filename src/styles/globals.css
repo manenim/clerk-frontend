@@ -359,7 +359,7 @@ a {
 
 
 
-@media only screen and (min-device-width: 1400px) and (max-device-width: 1900px) {
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1900px) {
   .select-field {
     width: 32em;
     height: 4em;
