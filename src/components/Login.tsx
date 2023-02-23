@@ -43,12 +43,12 @@ const PersonalInfo = () => {
     <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1.5em', mt: '.5em' }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
             <label>Email</label>
-            <input type="email" className="input-field" placeholder="Enter your email" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+            <input type="email" className="input-field" placeholder="Enter your email" style={{ padding: '10px' }} required />
         </Box> 
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
             <label>Password</label>
-            <input type="password" className="input-field" placeholder="Enter your password" style={{ width: '20em', padding: '10px', borderRadius: '5px', border: '1px solid gray' }} required />
+            <input type="password" className="input-field" placeholder="Enter your password" style={{ padding: '10px' }} required />
         </Box>
 
         <Box sx={{ position: 'relative', bottom: '0em', left: '6em' }}>

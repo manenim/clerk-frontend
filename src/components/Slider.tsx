@@ -32,7 +32,7 @@ export default function Slider() {
               <Typography className="slider-text"  sx={{ fontSize: { xs: '2.8em' } }}  color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
               <Typography className="slider-text" color="#ADADAD" fontWeight="400" sx={{ fontSize: { lg: '2.5em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>
             </Box>
-            <Box sx={{ position: 'absolute', bottom: 0, right: '52%', width: '100%', height: '50em', filter: 'blur(60px)', background: 'linear-gradient(to top, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0))', zIndex: "0" }} />
+            <Box sx={{ position: 'absolute', bottom: 0, right: '52%', width: '100%', height: '50em', filter: 'blur(60px)', background: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))', zIndex: "0" }} />
           </Box>
         ))}
       </Carousel>
