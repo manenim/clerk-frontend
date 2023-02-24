@@ -283,11 +283,6 @@ a {
     bottom: 2em;
   }
 
-
-  /* .input-field {
-    width: 40em !important;
-    height: 5em;
-  } */
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -297,14 +292,13 @@ a {
   }
 }
 
-@media only screen and (width: 375px) and (height: 812px) {
-  /* .input-field {
-    width: 30em !important;
-  }
 
-  .select-field {
-    width: 30em !important;
-  } */
+
+@media screen and (max-width: 1599px) {
+  .slider-image {
+    
+    height: 900px;
+  }
 }
 
 
@@ -316,7 +310,7 @@ a {
 }
 
 
-@media only screen and (min-device-width: 1500px) and (max-device-width: 1900px) {
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1900px) {
   .select-field {
     width: 27em;
     height: 4em;
