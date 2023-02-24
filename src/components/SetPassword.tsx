@@ -11,7 +11,7 @@ const setPassword = () => {
         window.history.back();
     };
   return (
-    <Container sx={{ marginTop: { lg: '2em', xl: '5em', md: '25em', xs: '3em', sm: '20em' }, pl: { lg: '3em', xl: '6em', sm: '3.4em'  } }}>
+    <Container sx={{ marginTop: { lg: '2em', xl: '5em', md: '25em', xs: '3em', sm: '20em' }, pl: { lg: '3em', xl: '6em', sm: '3.4em'  }, pb: '2em' }}>
     <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
 
         <Box sx={{ display: 'flex', gap: { lg: '15em', xs: "4em", md: '17em', sm: '17em' }, position: 'relative', bottom: { lg: '1em', md: '5em', xl: '3em', sm: '2em' } }}>
