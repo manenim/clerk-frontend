@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Bold";
   src: url("../../public/fonts/Gordita/Gordita-Bold.otf");
@@ -157,9 +161,9 @@ a {
 }
 
 .select-field {
-  width: 28em;
+  width: 23em;
   border-radius: 3px;
-  height: 4em;
+  height: 3.5em;
   cursor: pointer;
   color: #000;
   border: 1px solid #EAEBEC;
@@ -173,9 +177,9 @@ a {
 }
 
 .input-field {
-  width: 28em ;
+  width: 23em;
   border-radius: 3px;
-  height: 4em;
+  height: 3.5em;
   border: 1px solid #EAEBEC;
   color: #000;
   
@@ -184,7 +188,7 @@ a {
 
 @media screen and (max-width: 640px) {
   .input-field {
-    width: 25em !important;
+    width: 19em;
   }
 
   /* .input-field1 {
@@ -192,7 +196,7 @@ a {
   } */
 
   .select-field {
-    width: 25em;
+    width: 19em;
   }
 }
 
@@ -214,46 +218,11 @@ a {
 }
 
 
-/* .gradient-03 {
-  position: absolute;
-  width: 30em;
-  height: 600px;
-  left: 10%;
-  bottom: 0;
-  
-  background: rgba(0, 0, 0, 0.35);
-  filter: blur(10px);
-  transform: rotate(-90.2deg);
-} */
-
-/* .gradient-03 {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  width: 100%;
-  height: 30em;
-  filter: blur(40px);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  z-index: 99;
-} */
-
 .slider-text {
   z-index: 99;
   
 }
 
-/* .slider {
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
-.form-position {
-  position: relative;
-  top: 40px; 
-  height: fit-content; 
- 
-} */
 
 .slide {
   height:120vh;
@@ -262,6 +231,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .input-field {
+    width: 16em;
+    height: 2.9em;
+  }
 }
 
 @media (max-width: 767px) {
@@ -274,14 +250,6 @@ a {
   .slider {
     display: none;
   }
-
-  /* .select-field {
-    width: 27em !important;
-  }
-
-  .input-field {
-    width: 100% !important;
-  } */
 
   .school-info {
     position: relative;
@@ -357,11 +325,17 @@ a {
 }
 
 
+@media only screen and (min-device-width: 1300px) and (max-device-width: 1499px) {
+  .slider-image {
+    width: 700px;
+    height: 750px;
+  }
+}
 
 
-@media only screen and (min-device-width: 1600px) and (max-device-width: 1900px) {
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1900px) {
   .select-field {
-    width: 32em;
+    width: 27em;
     height: 4em;
   }
   
@@ -371,7 +345,7 @@ a {
   }
 
   .input-field {
-    width: 32em;
+    width: 27em;
     height: 4em;
   }
 }

@@ -11,7 +11,7 @@ const setPassword = () => {
         window.history.back();
     };
   return (
-    <Container sx={{ marginTop: { lg: '2em', xl: '5em', md: '25em', xs: '3em', sm: '20em' }, pl: { lg: '1.9em', xl: '6em' } }}>
+    <Container sx={{ marginTop: { lg: '2em', xl: '5em', md: '25em', xs: '3em', sm: '20em' }, pl: { lg: '3em', xl: '6em', sm: '3.4em'  } }}>
     <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
 
         <Box sx={{ display: 'flex', gap: { lg: '15em', xs: "4em", md: '17em', sm: '17em' }, position: 'relative', bottom: { lg: '1em', md: '5em', xl: '3em', sm: '2em' } }}>
@@ -50,10 +50,10 @@ const setPassword = () => {
                 </Box>
         </Box>
 
-        <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '100%', md: '70%', sm: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', pb: '2em'}}>
+        <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '100%', md: '70%', sm: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, p: '1em'}}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em' }}>
 
-                <Box  className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', width: { md: '100%',lg: '90%' }, pl: { lg: '1.7em', xs: '0', xl: '1.5em' } }}>
+                <Box  className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', width: { md: '100%',lg: '90%' }, pl: { lg: '.4em', xs: '0', xl: '.2em' } }}>
                 <Box className="logo_position" sx={{ py: '1.5em' }} >
                     <Image src={logo} alt="logo"  />
                 </Box>
@@ -62,25 +62,27 @@ const setPassword = () => {
                 </Box>
             </Box>
 
-            
-            <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em', mt: '.5em' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                    <label>Password</label>
-                    <input type="password" className="input-field" placeholder="Enter a secure password" style={{ padding: '10px', borderRadius: '5px' }} required />
-                </Box> 
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', py: '.5em' }}>
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                    <label>Confirm Password</label>
-                    <input type="text" className="input-field" placeholder="Confirm password" style={{ padding: '10px', borderRadius: '5px' }} required />
-                    <Typography color="#808080" sx={{ fontSize: '.7em' }}>Please Re-Enter Your Password To Conform</Typography>
-                </Box>
+                <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                        <label>Password</label>
+                        <input type="password" className="input-field" placeholder="Enter a secure password" style={{ padding: '10px', borderRadius: '5px' }} required />
+                    </Box> 
 
-                <Link style={{ width: '100%' }} href="/pricing"> 
-                    <button className='next-button'>Next</button>
-                </Link>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                        <label>Confirm Password</label>
+                        <input type="text" className="input-field" placeholder="Confirm password" style={{ padding: '10px', borderRadius: '5px' }} required />
+                        <Typography color="#808080" sx={{ fontSize: '.7em' }}>Please Re-Enter Your Password To Conform</Typography>
+                    </Box>
+
+                    <Link style={{ width: '100%' }} href="/pricing"> 
+                        <button className='next-button'>Next</button>
+                    </Link>
 
 
-            </FormControl>
+                </FormControl>
+            </Box>
 
 
         </Box>

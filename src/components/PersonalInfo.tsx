@@ -11,7 +11,7 @@ const PersonalInfo = () => {
       };
 
   return (
-    <Container sx={{ marginTop: { lg: '2em', xl: '2em', md: '19em', xs: '3em', sm: '20em' }, mb: { xs: '1em', lg: '0', xl: '0' }, pl: { lg: '1.9em', xl: '6em' } }}>
+    <Container sx={{ marginTop: { lg: '2em', xl: '2em', md: '19em', xs: '3em', sm: '20em' }, mb: { xs: '1em', lg: '0', xl: '0' }, pl: { lg: '3em', xl: '6em', sm: '3.4em'  } }}>
         <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
 
             <Box className="back-btn" sx={{ display: 'flex', gap: { lg: '15em', xl: '19em', xs: "4em", md: '17em' }, position: 'relative', bottom: { lg: '1em', md: '5em' } }}>
@@ -50,48 +50,50 @@ const PersonalInfo = () => {
 
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: 'fit-content', pb: '2em' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', pl: { lg: '1.6em', xl: '1.5em', xs: '.5em' } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, height: 'fit-content', p: '1em' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', pl: { lg: '.4em', xl: '.3em', xs: '.4em' } }}>
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em',  }}>
                     <Box sx={{ py: '1.3em' }}>
                         <Image src={logo} alt="logo" />
                     </Box>
-                        <Typography color="#242F9B" sx={{ fontWeight: '700', fontSize: { xs: '1.9em', lg: '1.9em' } }} variant='h4'>Personal Information</Typography>
+                        <Typography color="#242F9B" sx={{ fontWeight: '700', fontSize: { xs: '1.8em', lg: '1.9em' } }} variant='h4'>Personal Information</Typography>
                         <Typography sx={{ color: '#808080', width: '100%', fontSize: { lg: '.9em', xs: '1em' } }}>Kindly enter your personal information correctly. Having accurate information enables us to offer you the best service and secure your account.  </Typography>
                     </Box>
                 </Box>
-
                 
-                <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: { lg: '2.7em', md: '2.3em', sm: '2em', xs: '2em' }, mt: '1.5em'  }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Full Name</label>
-                        <input type="text" className="input-field" placeholder="Enter your full name" style={{ padding: '10px' }} required />
-                    </Box> 
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', py: '.5em' }}>
+                    <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: { lg: '2.7em', md: '2.3em', sm: '2em', xs: '2em' },   }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                            <label>Full Name</label>
+                            <input type="text" className="input-field" placeholder="Enter your full name" style={{ padding: '10px' }} required />
+                        </Box> 
 
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Phone Number</label>
-                        <input type="tel" className="input-field" placeholder="Enter school phone number" style={{ padding: '10px' }} required />
-                    </Box>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                            <label>Phone Number</label>
+                            <input type="tel" className="input-field" placeholder="Enter school phone number" style={{ padding: '10px' }} required />
+                        </Box>
 
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Email Address</label>
-                        <input type="email" className="input-field" placeholder="Enter school email address" style={{  padding: '10px'}} required />
-                    </Box>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                            <label>Email Address</label>
+                            <input type="email" className="input-field" placeholder="Enter school email address" style={{  padding: '10px'}} required />
+                        </Box>
 
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Address</label>
-                        <input type="text" className="input-field" placeholder="Enter your address" style={{ padding: '10px' }} required />
-                    </Box>
-
-
-
-                    <Link style={{ width: '100%' }} href="/setPassword"> 
-                        <button className='next-button'>Next</button>
-                    </Link>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
+                            <label>Address</label>
+                            <input type="text" className="input-field" placeholder="Enter your address" style={{ padding: '10px' }} required />
+                        </Box>
 
 
-                </FormControl>
+
+                        <Link style={{ width: '100%' }} href="/setPassword"> 
+                            <button className='next-button'>Next</button>
+                        </Link>
+
+
+                    </FormControl>
+                </Box>
+                
 
 
             </Box>

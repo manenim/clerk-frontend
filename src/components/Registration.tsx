@@ -17,7 +17,7 @@ const Registration = () => {
   };
 
   return (
-    <Container sx={{ marginTop: { lg: '3em', xl: '2em', md: '20em', xs: '3em', sm: '20em' }, pl: { lg: '1.9em', xl: '6em' } }}>
+    <Container sx={{ marginTop: { lg: '3em', xl: '2em', md: '20em', xs: '3em', sm: '20em' }, pl: { lg: '4em', xl: '6em', sm: '3.4em'  }, pb: '2em' }}>
         <Container className="reg-container" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
 
             <Box className="back-btn" sx={{ display: 'flex', gap: { lg: '15em', xs: "2em", md: '17em', xl: '19em' }, position: 'relative', bottom: { lg: '1em', md: '5em' } }}>
@@ -25,6 +25,7 @@ const Registration = () => {
             <Box sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', sm: 'flex'  } }}>
                 <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
             </Box>
+            
                 <Box>
                     <Typography>Already have an account? <Link style={{ color: 'blue' }} href="/login">Login</Link></Typography>
                 </Box>
@@ -53,24 +54,25 @@ const Registration = () => {
                     <Link href="/setPassword">
                         <Typography sx={{ fontSize: '.8em' }}>Set Up Password</Typography>
                     </Link>
-                </Box>
-
-                
+                </Box>        
             </Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', height: 'fit-content', pb: '2em' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', pl: { lg: '1.7em', xs: '0em', xl: '0' }, py: '.5em' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, height: 'fit-content', p: '1em' }}>
 
-                    <Box className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', }}>
+
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', pl: { lg: '0', xs: '.4em' } }}>
+
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '1em', }}>
                         <Box sx={{ py: '1.5em' }}>
                             <Image src={logo} alt="logo"  />
                         </Box>
-                        <Typography color="#242F9B" sx={{ fontWeight: '700' }} variant='h4'>School Information</Typography>
+                        <Typography color="#242F9B" sx={{ fontWeight: '700', fontSize: { lg: '2.1em', xs: '1.9em' } }} variant='h4'>School Information</Typography>
                         <Typography sx={{ color: '#808080', width: '100%', }}>Please fill in the correct information about the school below </Typography>
                     </Box>
                 </Box>
 
-                
+                <Box sx={{ display: 'flex', flexDirection: '', gap: '2.5em', margin: '.9em', py: '' }}>
+
                 <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2.7em', mt: '.5em' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em',  }}>
                     <label>School Name</label>
@@ -107,6 +109,8 @@ const Registration = () => {
 
 
                 </FormControl>
+                </Box>
+
 
 
             </Box>

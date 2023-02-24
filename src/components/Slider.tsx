@@ -27,7 +27,7 @@ export default function Slider() {
         {slider.map((item) => (
           <Box key={item.id} sx={{ width: '100%', height: '100%', position: 'relative' }}>
             <Image className="slider-image" src={item.image} alt="slider" width={screenWidth > 1000 ? 700 : 1000} height={screenWidth > 1000 ? 800 : 1200 } />
-            <Box sx={{ position: 'absolute', bottom: { lg: '10em',  xs: '12em', xl: '7em' }, left: { lg: '3em', xl: '4em', xs: '3em' }, zIndex: "1", }}>
+            <Box sx={{ position: 'absolute', bottom: { lg: '2em',  xs: '12em', xl: '4em' }, left: { lg: '3em', xl: '4em', xs: '3em' }, zIndex: "1", pb: '4em' }}>
               <Typography className="slider-text" sx={{ fontSize: { xs: '2.9em' } }} color="#fff" fontWeight="700" variant="h3">{item.headText1}</Typography>
               <Typography className="slider-text"  sx={{ fontSize: { xs: '2.8em' } }}  color="#fff" fontWeight="700" variant="h3">{item.headText2}</Typography>
               <Typography className="slider-text" color="#ADADAD" fontWeight="400" sx={{ fontSize: { lg: '2.5em', xs: '1.8em' } }} variant="h2">{item.lightText}</Typography>

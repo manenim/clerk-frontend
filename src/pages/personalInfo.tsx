@@ -5,7 +5,7 @@ import { Slider, PersonalInfo } from "@/components";
 export default function PeronalInfo() {
   return (
   
-      <Box sx={{ display: 'grid', marginBottom: { md: '3em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: 'gridTemplateRows'} }}>
+      <Box sx={{ display: { lg: 'grid', xs: 'flex' }, marginBottom: { md: '3em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: 'gridTemplateRows'} }}>
         <Box className="slider">
           <Slider />
         </Box>

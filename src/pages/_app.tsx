@@ -6,6 +6,7 @@ import React from "react";
 import LinearIndeterminate from "@/components/ProgessLoader";
 import { Suspense } from "react";
 import { CustomMuiTheme } from "../theme/index";
+
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname, asPath, events } = useRouter();
   const [loading, setLoading] = React.useState(false);

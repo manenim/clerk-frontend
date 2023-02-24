@@ -6,12 +6,12 @@ import { Slider, WelcomeBack } from "@/components";
 export default function Home() {
   return (
   
-      <Box sx={{ display: 'grid', marginBottom: { xs: '2em', xl: '0' }, marginLeft: { xs: '2em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: '1fr'} }}>
+      <Box sx={{ display: 'grid', marginBottom: { xs: '2em', xl: '0' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: '1fr'}, justifyContent: 'center', alignContent: 'center', overflow: { lg: 'auto', xs: 'hidden' } }}>
         <Box className="slider">
           <Slider />
         </Box>
        
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pl: { lg: '2em', xs: '0' } }}>
           <WelcomeBack />
         </Box>
       </Box>
