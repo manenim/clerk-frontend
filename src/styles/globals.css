@@ -188,15 +188,11 @@ a {
 
 @media screen and (max-width: 640px) {
   .input-field {
-    width: 19em;
+    width: 20em;
   }
 
-  /* .input-field1 {
-    width: 25em;
-  } */
-
   .select-field {
-    width: 19em;
+    width: 20em;
   }
 }
 
@@ -251,16 +247,6 @@ a {
     display: none;
   }
 
-  .school-info {
-    position: relative;
-    left: .7em;
-  }
-
-  .personal-info {
-    position: relative;
-    left: 1em;
-  }
-
 }
 
 @media only screen and (min-width: 728px) and (max-width: 1024px) {
@@ -296,10 +282,7 @@ a {
     position: relative;
     bottom: 2em;
   }
-  .school-info {
-    position: relative;
-    right: 3em;
-  }
+
 
   /* .input-field {
     width: 40em !important;
@@ -351,10 +334,6 @@ a {
 }
 
 @media only screen and (max-width: 1200px) and (height: 649px) {
-  .school-info {
-    position: relative;
-    right: 1em;
-  }
 
   .logo-position {
     position: relative;

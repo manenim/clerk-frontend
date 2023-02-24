@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Box, Typography, Card, CardContent, Button, Container } from "@mui/material";
-import logo from "../../public/images/svgs/Logo.svg";
+import logo from "../../public/images/auth/Logo.png";
 import { price } from "@/constants/pricing";
 import Image from "next/image";
 

@@ -60,7 +60,7 @@ const Registration = () => {
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, height: 'fit-content', p: '1em' }}>
 
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', pl: { lg: '0', xs: '.4em' } }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2.5em', margin: '.9em', }}>
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '1em', }}>
                         <Box sx={{ py: '1.5em' }}>

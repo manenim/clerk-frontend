@@ -6,7 +6,7 @@ import { Slider, WelcomeBack } from "@/components";
 export default function Home() {
   return (
   
-      <Box sx={{ display: 'grid', marginBottom: { xs: '2em', xl: '0' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: '1fr'}, justifyContent: 'center', alignContent: 'center', overflow: { lg: 'auto', xs: 'hidden' } }}>
+      <Box sx={{ display: 'grid', marginBottom: { xs: '2em', xl: '0' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: '1fr'}, justifyContent: 'center', alignContent: 'center', overflow: 'hidden' }}>
         <Box className="slider">
           <Slider />
         </Box>

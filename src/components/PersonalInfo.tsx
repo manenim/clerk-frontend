@@ -51,7 +51,7 @@ const PersonalInfo = () => {
             </Box>
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '11.8321px', width: { lg: '80%', xs: '100%', md: '80%', sm: '100%', xl: '80%' }, justifyContent: 'center', margin: { lg: '0 auto' }, height: 'fit-content', p: '1em' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', pl: { lg: '.4em', xl: '.3em', xs: '.4em' } }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', pl: { lg: '.4em', xl: '.3em', xs: '0' } }}>
 
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.9em',  }}>
                     <Box sx={{ py: '1.3em' }}>

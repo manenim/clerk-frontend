@@ -53,7 +53,7 @@ const setPassword = () => {
         <Box className="form-position" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '100%', md: '70%', sm: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, p: '1em'}}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em' }}>
 
-                <Box  className="school-info" sx={{ display: 'flex', flexDirection: 'column', gap: '.3em', width: { md: '100%',lg: '90%' }, pl: { lg: '.4em', xs: '0', xl: '.2em' } }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', pl: { lg: '.4em', xs: '0', xl: '0' } }}>
                 <Box className="logo_position" sx={{ py: '1.5em' }} >
                     <Image src={logo} alt="logo"  />
                 </Box>
