@@ -1,18 +1,25 @@
-import { Typography } from "@mui/material";
-import { Container, Box } from "@mui/material";
-import { Slider, Registration } from "@/components";
+import Head from 'next/head'
+import styles from '@/styles/Home.module.css'
+import { Slider, Registration } from '../components'
 
-export default function registration() {
+export default function Register() {
   return (
-      <Box sx={{ display: { lg: 'grid', xs: 'flex' }, marginBottom: { md: '3em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', } }}>
-        <Box className="slider">
-          <Slider />
-        </Box>
-       
-        <Box className="reg-page" sx={{  display: 'flex', justifyContent: 'center', alignItems: 'center',  }}>
-          <Registration />
-        </Box>
-      </Box>
+    <>
+      <Head>
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+      </Head>
+      <main className={styles.main}>
 
+        <div className={styles.slider_wrapper}>
+          <Slider />
+        </div>
+
+        <div>
+          <Registration />
+        </div>
+
+      </main>
+    </>
   )
 }

@@ -1,19 +1,25 @@
-import { Typography } from "@mui/material";
-import { Container, Box } from "@mui/material";
-import { Slider, SetPassword } from "@/components";
+import Head from 'next/head';
+import styles from '@/styles/Home.module.css';
+import { Slider, SetPassword } from '../components';
 
 export default function setPassword() {
   return (
-  
-      <Box sx={{ display: { lg: 'grid', xs: 'flex' }, marginBottom: { md: '3em' }, gridTemplateColumns: { lg: '1fr 1fr', md: 'gridTemplateRows', xs: 'gridTemplateRows'} }}>
-        <Box className="slider">
-          <Slider />
-        </Box>
-       
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <SetPassword />
-        </Box>
-      </Box>
+    <>
+      <Head>
+        <title>Set Password</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+      </Head>
+      <main className={styles.main}>
 
+        <div className={styles.slider_wrapper}>
+          <Slider />
+        </div>
+
+        <div>
+          <SetPassword />
+        </div>
+
+      </main>
+    </>
   )
 }

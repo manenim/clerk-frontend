@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
-import styles from '@/styles/Registration.module.css';
+import styles from '@/styles/PersonalInformation.module.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/images/auth/Logo.png';
 
-const Registration = () => {
-
-    // const [value, setValue] = useState("");
-
-    // const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    //   setValue(event.target.value as string);
-    // };
+const PersonalInformation = () => {
   
     const handleBackButton = () => {
       window.history.back();
@@ -36,7 +30,7 @@ const Registration = () => {
 
                 <div>
                     <div className={styles.two}><span>2</span></div>
-                    <Link style={{ textDecoration: 'none', color: '#808080' }} href="/personalInformation">
+                    <Link style={{ textDecoration: 'none', color: '#242F9B' }} href="/personalInformation">
                         <p>Personal Information</p>
                     </Link>
                     <div className={styles.line2} />
@@ -56,8 +50,8 @@ const Registration = () => {
                     <div className={styles.reg_logo}>
                         <Image src={logo} alt="logo" />
                         <div>
-                            <h2>School Information</h2>
-                            <span>Please fill in  the correct information about the school below</span>
+                            <h2>Personal Information</h2>
+                            <span>Kindly enter your personal information correctly. it enables us to offer you the best service and secure your account.</span>
                         </div>
                     </div>
                     
@@ -73,25 +67,17 @@ const Registration = () => {
                                 <input type="text" className={styles.input} placeholder="Enter School Address" required />
                             </div>
 
-                            <div className={styles.input_field}>
-                                <label>Registration Status</label>
-                                <select className={styles.select_field}  style={{color: '#757575'}}>
-                                    <option value="" disabled selected hidden>Registration Status</option>
-                                    <option style={{ color: '#000' }}>Registered</option>
-                                    <option style={{ color: '#000' }}>Not Registered</option>
-                                </select>
-                            </div>
+                           <div className={styles.input_field}>
+                            <label>Email Address</label>
+                                <input type="email" className={styles.input} placeholder="Enter school email address" required />
+                           </div>
 
-                            <div className={styles.input_field}>
-                                <label>Education Level</label>
-                                <select className={styles.select_field}  style={{color: '#757575'}}>
-                                    <option value="" disabled selected hidden>Education Level</option>
-                                    <option style={{ color: '#000' }}>100</option>
-                                    <option style={{ color: '#000' }}>200</option>
-                                </select>
-                            </div>
+                           <div className={styles.input_field}>
+                            <label>Address</label>
+                                <input type="text" className={styles.input} placeholder="Enter your address" required />
+                           </div>
 
-                            <Link style={{ width: '100%' }} href="/personalInformation"> 
+                            <Link style={{ width: '100%' }} href="/setPassword"> 
                                 <button className={styles.next_button}>Next</button>
                             </Link>
                         </form>
@@ -105,4 +91,4 @@ const Registration = () => {
   )
 }
 
-export default Registration
+export default PersonalInformation

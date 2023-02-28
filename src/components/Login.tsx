@@ -1,76 +1,67 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styles from '@/styles/Login.module.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { Box, Typography, FormControl, Container } from '@mui/material';
 import Link from 'next/link';
-import logo from "../../public/images/auth/Logo.png";
 import Image from 'next/image';
+import logo from '../../public/images/auth/Logo.png';
 
-const PersonalInfo = () => {
-
+const Login = () => {
+  
     const handleBackButton = () => {
-        window.history.back();
-      };
-
-
+      window.history.back();
+    };
   return (
-    <Container sx={{ mt: { lg: '2em', xl: '0', xs: '2em', sm: '20em'  } }}>
-         <Container sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '2em'}}>
+    <div className={styles.registration}>
+        <div className={styles.reg_container}>
+            <div className={styles.reg_back}>
+                <span onClick={handleBackButton} className={styles.arrow_back}><ArrowBackIosIcon fontSize='small' />Back</span>
 
-            <Box  sx={{ display: 'flex', gap: { lg: '11em', xl: '19em', xs: "4em", md: '17em' }, mt: { lg: '0', xl: '3em' }, zIndex: '999' }}>
+                <p>Dont have an account? <Link style={{ textDecoration: 'none', color: '#242F9B' }} href="/registration">Create Account</Link></p>
+            </div>
 
-            <Box  sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', sm: 'flex'  } }}>
-                <Typography onClick={handleBackButton} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}><ArrowBackIosIcon />back</Typography>
-            </Box>
-                <Box>
-                    <Typography>Don't have an account? <Link style={{ color: 'blue' }} href="/registration">Create an account</Link></Typography>
-                </Box>
-            </Box>
-
-
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', border: '1px solid #E6E6E6', borderRadius: '10px', width: { lg: '80%', xs: '100%', md: '80%', sm: '90%' }, justifyContent: 'center', margin: { lg: '0 auto' }, gap: '1em', p: '1em'  }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2em', margin: '.9em', }}>
-
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.3em',  }}>
-                    <Box sx={{ pb: '2em' }}>
+            <div className={styles.reg_field}>
+                <div className={styles.reg__field}>
+                    <div className={styles.reg_logo}>
                         <Image src={logo} alt="logo" />
-                    </Box>
-                        <Typography color="#242F9B" sx={{ fontWeight: '700', fontSize: { xs: '1.9em', lg: '2.2em' } }} variant='h4'>Sign In</Typography>
-                        <Typography sx={{ color: '#808080', width: { xs: '100%', lg: '100%', xl: '100%', sm: '90%' } }}>Sign in to access your account and all the features we have to offer.</Typography>
-                    </Box>
-                </Box>
+                        <div>
+                            <h2>Sign In</h2>
+                            <span>Sign in to access your account and all the features we have to offer.</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form className={styles.form}>
+                            <div className={styles.input_field}>
+                                <label>Email</label>
+                                <input type="email" className={styles.input} placeholder="Enter your email" required />
+                            </div>
 
-                
-                <FormControl variant="outlined" sx={{ marginBottom: '1em', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1.5em', }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Email</label>
-                        <input type="email" className="input-field" placeholder="Enter your email" style={{ padding: '10px' }} required />
-                    </Box> 
+                            <div className={styles.input_field}>
+                                <label>Password</label>
+                                <input type="password" className={styles.input} placeholder="Enter your password" style={{ padding: '10px' }} required />
+                            </div>
 
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '.7em' }}>
-                        <label>Password</label>
-                        <input type="password" className="input-field" placeholder="Enter your password" style={{ padding: '10px' }} required />
-                    </Box>
-
-                    <Box sx={{ position: 'relative', bottom: '0em', left: '6em' }}>
-                        <Typography sx={{ textDecoration: 'underline', color: '#494C8D', cursor: 'pointer' }}>Forgot password?</Typography>
-                    </Box>
-
-                    <Link style={{ width: '100%' }} href="/"> 
-                        <button className='next-button'>Sign In</button>
-                    </Link>
+                            <div className={styles.forgot_password}>
+                                <p>Forgot password?</p>
+                            </div>
 
 
-                </FormControl>
+                            <Link style={{ width: '100%' }} href="/setPassword"> 
+                                <button className={styles.next_button}>Next</button>
+                            </Link>
+                        </form>
+                    </div>
 
-                <Box sx={{ width: '90%', ml: '1em', mb: '1em' }}>
-                    <Typography sx={{ fontSize: '.7em', color: 'gray', textAlign: 'center' }}>By signing in, you agree to our <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Terms of Service</Link> and <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Privacy Policy.</Link></Typography>
-                </Box>
+                    <div style={{ width: '90%', marginLeft: '1em', marginBottom: '1em' }}>
+                    <p style={{ fontSize: '.7em', color: 'gray', textAlign: 'center' }}>By signing in, you agree to our <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Terms of Service</Link> and <Link style={{ color: 'blue', textDecoration: 'underline', fontSize: '1.3em' }} href="/">Privacy Policy.</Link></p>
+                </div>
+                </div>
+            </div>
 
 
-            </Box>
-         </Container>
-    </Container>
+        </div>        
+    </div>
   )
 }
 
-export default PersonalInfo
+export default Login
