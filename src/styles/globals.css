@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../../public/fonts/Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf');
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Bold";
   src: url("../../public/fonts/Gordita/Gordita-Bold.otf");
 }
@@ -14,6 +20,11 @@
   font-family: "Regular";
   src: url("../../public/fonts/Gordita/Gordita-Regular.otf");
 }
+
+body {
+  font-family: 'Satoshi-Variable', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -159,9 +170,3 @@ a {
   cursor: pointer;
   color: #fff;
 }
-
-
-
-
-
-

@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    
     width: 55%;
     overflow: hidden;
   }
@@ -14,7 +13,7 @@
   
   .slider_text {
     position: absolute;
-    bottom: 6.5em;
+    bottom: 19em;
     left: 4em;
     z-index: 1;
     right: 0;
@@ -25,8 +24,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    
     width: 900px;
-    height: 20em;
+    height: 30em;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, .6));
     z-index: 0;
     filter: blur(50px);

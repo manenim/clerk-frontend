@@ -10,6 +10,7 @@ const Login = () => {
     const handleBackButton = () => {
       window.history.back();
     };
+    
   return (
     <div className={styles.registration}>
         <div className={styles.reg_container}>
