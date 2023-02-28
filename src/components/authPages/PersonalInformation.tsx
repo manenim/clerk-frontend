@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
-import styles from '@/styles/SetPassword.module.css';
+import styles from '@/styles/PersonalInformation.module.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/auth/Logo.png';
+import logo from '../../../public/images/auth/Logo.png';
 
 const PersonalInformation = () => {
   
     const handleBackButton = () => {
       window.history.back();
     };
-    
   return (
     <div className={styles.registration}>
         <div className={styles.reg_container}>
@@ -39,7 +38,7 @@ const PersonalInformation = () => {
 
                 <div>
                     <div className={styles.three}><span>3</span></div>
-                    <Link style={{ textDecoration: 'none', color: '#242F9B' }} href="/setPassword">
+                    <Link style={{ textDecoration: 'none', color: '#808080' }} href="/setPassword">
                         <p>Set Password</p>
                     </Link>
                 </div>
@@ -51,26 +50,34 @@ const PersonalInformation = () => {
                     <div className={styles.reg_logo}>
                         <Image src={logo} alt="logo" />
                         <div>
-                            <h2>Setup Password</h2>
-                            <span>Please choose a password that includes a mix of letters, numbers, and symbols, and is at least 8 characters long.</span>
+                            <h2>Personal Information</h2>
+                            <span>Kindly enter your personal information correctly. it enables us to offer you the best service and secure your account.</span>
                         </div>
                     </div>
                     
                     <div>
                         <form className={styles.form}>
                             <div className={styles.input_field}>
-                                <label>Password</label>
-                                <input type="password" className={styles.input} placeholder="Enter a secure password" required />
+                                <label>School Name</label>
+                                <input type="text" className={styles.input} placeholder="Enter School Name" required />
                             </div>
 
                             <div className={styles.input_field}>
-                                <label>Confirm Password</label>
-                                <input type="password" className={styles.input} placeholder="Confirm password" required />
-                                <p style={{ fontSize: '.7em', color: '#808080' }}>Please Re-Enter Your Password To Conform</p>
+                                <label>School Address</label>
+                                <input type="text" className={styles.input} placeholder="Enter School Address" required />
                             </div>
 
+                           <div className={styles.input_field}>
+                            <label>Email Address</label>
+                                <input type="email" className={styles.input} placeholder="Enter school email address" required />
+                           </div>
 
-                            <Link style={{ width: '100%' }} href="/pricing"> 
+                           <div className={styles.input_field}>
+                            <label>Address</label>
+                                <input type="text" className={styles.input} placeholder="Enter your address" required />
+                           </div>
+
+                            <Link style={{ width: '100%' }} href="/setPassword"> 
                                 <button className={styles.next_button}>Next</button>
                             </Link>
                         </form>

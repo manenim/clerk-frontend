@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '@/styles/WelcomeBack.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/auth/Logo.png';
-import icon1 from '../../public/images/icons/school.svg';
-import icon2 from '../../public/images/icons/Vector.png';
+import logo from '../../../public/images/auth/Logo.png';
+import icon1 from '../../../public/images/icons/school.svg';
+import icon2 from '../../../public/images/icons/Vector.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const WelcomeBack = () => {

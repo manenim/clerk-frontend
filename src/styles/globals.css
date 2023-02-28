@@ -170,3 +170,13 @@ a {
   cursor: pointer;
   color: #fff;
 }
+
+@media screen and (max-width: 640px) {
+  .inactive {
+    height: 3em;
+  }
+
+  .btn-active {
+    height: 3em;
+  }
+}

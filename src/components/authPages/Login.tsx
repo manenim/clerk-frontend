@@ -3,7 +3,7 @@ import styles from '@/styles/Login.module.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/auth/Logo.png';
+import logo from '../../../public/images/auth/Logo.png';
 
 const Login = () => {
   
